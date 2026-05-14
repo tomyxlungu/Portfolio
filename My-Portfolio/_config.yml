@@ -1,0 +1,29 @@
+# Site settings
+title: "My Portfolio"
+description: "Personal portfolio website"
+url: "https://tomyxlungu.github.io"
+baseurl: "/Portfolio"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Include files
+include:
+  - _pages

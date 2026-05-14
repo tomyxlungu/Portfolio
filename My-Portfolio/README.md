@@ -1,53 +1,91 @@
-# React + TypeScript + Vite
+# My Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio website built with Jekyll and hosted on GitHub Pages.
 
-Currently, two official plugins are available:
+## About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is my professional portfolio showcasing my work as a web developer and IT specialist. The site is built using Jekyll, a static site generator, and hosted on GitHub Pages.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices
+- **Fast Loading**: Static site with optimized assets
+- **SEO Friendly**: Built-in SEO optimization with Jekyll SEO tag
+- **Easy Maintenance**: Simple markdown-based content management
 
-## Expanding the ESLint configuration
+## Local Development
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Ruby (version 2.5.0 or higher)
+- Bundler
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Installation
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/tomyxlungu/Portfolio.git
+   cd Portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   bundle install
+   ```
+
+3. Run the development server:
+   ```bash
+   bundle exec jekyll serve
+   ```
+
+4. Open your browser and visit `http://localhost:4000`
+
+## Deployment
+
+This site is automatically deployed to GitHub Pages when changes are pushed to the `main` branch. GitHub Pages will build the site using Jekyll.
+
+## Project Structure
+
+```
+├── _config.yml          # Jekyll configuration
+├── _layouts/            # Layout templates
+│   └── default.html
+├── _pages/              # Additional pages
+│   ├── about.md
+│   ├── projects.md
+│   └── contact.md
+├── assets/              # Static assets
+│   ├── css/
+│   └── js/
+├── index.md             # Homepage
+└── Gemfile              # Ruby dependencies
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Customization
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
+### Adding New Pages
+
+1. Create a new markdown file in the `_pages/` directory
+2. Add front matter with layout and title
+3. Add content using Markdown
+
+### Modifying Styles
+
+Edit the CSS files in `assets/css/` to customize the appearance.
+
+### Updating Content
+
+Edit the markdown files to update text content, or modify the HTML layouts for structural changes.
+
+## Contact
+
+Thomas Lungu
+- Email: tomyxlungu@gmail.com
+- LinkedIn: [Thomas Lungu](https://www.linkedin.com/in/thomas-lungu-123456789/)
+
+---
+
+Built with [Jekyll](https://jekyllrb.com/) and hosted on [GitHub Pages](https://pages.github.com/)
 import reactDom from 'eslint-plugin-react-dom'
 
 export default defineConfig([
