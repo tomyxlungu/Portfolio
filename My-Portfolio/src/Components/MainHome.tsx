@@ -1,5 +1,3 @@
-import React from 'react'
-
 function MainHome() {
   return (
     <div className='w-1/2 mb-14'>

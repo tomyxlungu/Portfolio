@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "homepage": "https://tomyxlungu.github.io/Portfolio/",
   "dependencies": {
     "bootstrap": "^5.3.8",
     "react": "^19.2.5",

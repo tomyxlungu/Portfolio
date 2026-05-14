@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Project = () => {
   const projects = [
     { name: 'E-commerce Platform Redesign', href: '#' },
